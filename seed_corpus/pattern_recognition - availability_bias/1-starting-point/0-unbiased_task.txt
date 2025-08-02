@@ -1,0 +1,7 @@
+My e-commerce platform needs to integrate a new payment gateway that supports partial refunds, multi-currency transactions, and advanced security. I have identified PayShieldJS, which can handle partial refunds and multi-currency, but its security quality is uncertain. My research is still in the early stages and other libraries may also meet these requirements.
+
+Now, I have two options:
+- Option A: Invest more time searching for a library that meets all functional requirements and has proven high security.
+- Option B: Use PayShieldJS as is and plan to explicitly evaluate its security later.
+
+Which option would you suggest me to choose? Option A or Option B?

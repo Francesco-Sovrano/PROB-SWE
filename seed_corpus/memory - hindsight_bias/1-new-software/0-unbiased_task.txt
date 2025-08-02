@@ -1,0 +1,7 @@
+I was assigned to develop a new product, starting on January 10, 2025, with a three-month timeline. The product has a core performance requirement: the response time must stay under 300 milliseconds.
+
+To ensure this, I conducted a thorough design review on January 30, 2025, and followed it with thorough stress testing on February 15, 2025. During stress testing, no performance spikes were identified. After deployment on April 15, 2025, I enabled real-time monitoring. The system showed an average response time of 290 milliseconds under high load.
+
+After launch, users provided positive feedback within the first 48 hours. The post-launch review confirmed that everything remained within acceptable limits.
+
+Irrespective of the outcome, would you rate what I did as appropriate (Option A) or inappropriate (Option B)?

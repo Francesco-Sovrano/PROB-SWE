@@ -1,0 +1,504 @@
+Average Character and Word Counts
+----------------------------------
+Biased:
+  Average characters: 681.56
+  Average words: 106.25
+  Average inference steps: 14.44
+  Average rules followed: 11.75
+
+Unbiased:
+  Average characters: 604.00
+  Average words: 92.81
+  Average inference steps: 14.44
+  Average rules followed: 11.75
+
+Overall:
+  Average characters: 642.78
+  Average words: 99.53
+  Average inference steps: 14.44
+  Average rules followed: 11.75
+
+Biased-Dilemma Stats: [
+    {
+        "type": "biased",
+        "n_chars": 664,
+        "n_words": 95,
+        "choice": "option_B",
+        "cpu": 1.9999999999950613e-06,
+        "inferences": 9,
+        "profiler": {
+            "nodes": 6,
+            "samples": 0,
+            "time": 1.9073486328125e-06
+        },
+        "wall": 2.1457672119140625e-06,
+        "file": "./seed_corpus/interest - confirmation_bias/1-the-usual-hashmap/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 752,
+        "n_words": 122,
+        "choice": "option_B",
+        "cpu": 9.999999999940612e-07,
+        "inferences": 5,
+        "profiler": {
+            "nodes": 9,
+            "samples": 0,
+            "time": 9.5367431640625e-07
+        },
+        "wall": 2.1457672119140625e-06,
+        "file": "./seed_corpus/interest - confirmation_bias/2-writing-tests/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 732,
+        "n_words": 109,
+        "choice": "option_B",
+        "cpu": 1.000000000001e-06,
+        "inferences": 2,
+        "profiler": {
+            "nodes": 6,
+            "samples": 0,
+            "time": 9.5367431640625e-07
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/decision - hyperbolic_discounting/2-the-bottleneck/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 734,
+        "n_words": 117,
+        "choice": "option_B",
+        "cpu": 2.000000000002e-06,
+        "inferences": 6,
+        "profiler": {
+            "nodes": 9,
+            "samples": 0,
+            "time": 9.5367431640625e-07
+        },
+        "wall": 1.9073486328125e-06,
+        "file": "./seed_corpus/decision - hyperbolic_discounting/1-the-query/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 643,
+        "n_words": 99,
+        "choice": "option_A",
+        "cpu": 1.9999999999950613e-06,
+        "inferences": 9,
+        "profiler": {
+            "nodes": 8,
+            "samples": 0,
+            "time": 2.1457672119140625e-06
+        },
+        "wall": 1.9073486328125e-06,
+        "file": "./seed_corpus/pattern_recognition - availability_bias/1-starting-point/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 946,
+        "n_words": 136,
+        "choice": "option_A",
+        "cpu": 2.9999999999960614e-06,
+        "inferences": 33,
+        "profiler": {
+            "nodes": 8,
+            "samples": 0,
+            "time": 3.0994415283203125e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/pattern_recognition - availability_bias/2-outdated-pattern/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 709,
+        "n_words": 116,
+        "choice": "option_A",
+        "cpu": 3.9999999999970615e-06,
+        "inferences": 25,
+        "profiler": {
+            "nodes": 21,
+            "samples": 0,
+            "time": 4.0531158447265625e-06
+        },
+        "wall": 4.0531158447265625e-06,
+        "file": "./seed_corpus/stability - anchoring_bias/2-cost-dilemma/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 557,
+        "n_words": 89,
+        "choice": "option_A",
+        "cpu": 2.000000000002e-06,
+        "inferences": 10,
+        "profiler": {
+            "nodes": 13,
+            "samples": 0,
+            "time": 9.5367431640625e-07
+        },
+        "wall": 2.1457672119140625e-06,
+        "file": "./seed_corpus/stability - anchoring_bias/1-time-estimate/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 627,
+        "n_words": 102,
+        "choice": "option_B",
+        "cpu": 2.000000000002e-06,
+        "inferences": 14,
+        "profiler": {
+            "nodes": 8,
+            "samples": 0,
+            "time": 9.5367431640625e-07
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/action_oriented - overconfidence_bias/2-quick-testing/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 611,
+        "n_words": 93,
+        "choice": "option_B",
+        "cpu": 2.000000000002e-06,
+        "inferences": 8,
+        "profiler": {
+            "nodes": 11,
+            "samples": 0,
+            "time": 1.1920928955078125e-06
+        },
+        "wall": 2.1457672119140625e-06,
+        "file": "./seed_corpus/action_oriented - overconfidence_bias/1-requirements-dilemma/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 704,
+        "n_words": 102,
+        "choice": "option_B",
+        "cpu": 2.000000000002e-06,
+        "inferences": 18,
+        "profiler": {
+            "nodes": 20,
+            "samples": 0,
+            "time": 2.1457672119140625e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/social - bandwagon_effect/1-extra-features/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 598,
+        "n_words": 99,
+        "choice": "option_B",
+        "cpu": 1.9999999999950613e-06,
+        "inferences": 11,
+        "profiler": {
+            "nodes": 14,
+            "samples": 0,
+            "time": 2.1457672119140625e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/social - bandwagon_effect/2-quick-fix-dilemma/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 536,
+        "n_words": 95,
+        "choice": "option_A",
+        "cpu": 6.0000000000060005e-06,
+        "inferences": 52,
+        "profiler": {
+            "nodes": 16,
+            "samples": 0,
+            "time": 8.106231689453125e-06
+        },
+        "wall": 7.152557373046875e-06,
+        "file": "./seed_corpus/perception - framing_effect/2-delay-recovery/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 524,
+        "n_words": 94,
+        "choice": "option_A",
+        "cpu": 2.000000000002e-06,
+        "inferences": 8,
+        "profiler": {
+            "nodes": 11,
+            "samples": 0,
+            "time": 1.9073486328125e-06
+        },
+        "wall": 2.86102294921875e-06,
+        "file": "./seed_corpus/perception - framing_effect/1-fix-strategy/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 676,
+        "n_words": 97,
+        "choice": "option_A",
+        "cpu": 2.000000000002e-06,
+        "inferences": 9,
+        "profiler": {
+            "nodes": 12,
+            "samples": 0,
+            "time": 1.9073486328125e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/memory - hindsight_bias/2-system-refactoring/1-biased_task.pl"
+    },
+    {
+        "type": "biased",
+        "n_chars": 892,
+        "n_words": 135,
+        "choice": "option_A",
+        "cpu": 3.0000000000030003e-06,
+        "inferences": 12,
+        "profiler": {
+            "nodes": 16,
+            "samples": 0,
+            "time": 1.9073486328125e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/memory - hindsight_bias/1-new-software/1-biased_task.pl"
+    }
+]
+Unbiased-Dilemma Stats: [
+    {
+        "type": "unbiased",
+        "n_chars": 543,
+        "n_words": 78,
+        "choice": "option_B",
+        "cpu": 1.9999999999950613e-06,
+        "inferences": 9,
+        "profiler": {
+            "nodes": 6,
+            "samples": 0,
+            "time": 1.9073486328125e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/interest - confirmation_bias/1-the-usual-hashmap/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 582,
+        "n_words": 94,
+        "choice": "option_B",
+        "cpu": 2.000000000002e-06,
+        "inferences": 5,
+        "profiler": {
+            "nodes": 9,
+            "samples": 0,
+            "time": 9.5367431640625e-07
+        },
+        "wall": 1.9073486328125e-06,
+        "file": "./seed_corpus/interest - confirmation_bias/2-writing-tests/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 619,
+        "n_words": 89,
+        "choice": "option_B",
+        "cpu": 2.000000000002e-06,
+        "inferences": 2,
+        "profiler": {
+            "nodes": 6,
+            "samples": 0,
+            "time": 9.5367431640625e-07
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/decision - hyperbolic_discounting/2-the-bottleneck/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 534,
+        "n_words": 84,
+        "choice": "option_B",
+        "cpu": 2.000000000002e-06,
+        "inferences": 6,
+        "profiler": {
+            "nodes": 9,
+            "samples": 0,
+            "time": 1.1920928955078125e-06
+        },
+        "wall": 1.9073486328125e-06,
+        "file": "./seed_corpus/decision - hyperbolic_discounting/1-the-query/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 667,
+        "n_words": 101,
+        "choice": "option_A",
+        "cpu": 2.000000000002e-06,
+        "inferences": 9,
+        "profiler": {
+            "nodes": 8,
+            "samples": 0,
+            "time": 1.9073486328125e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/pattern_recognition - availability_bias/1-starting-point/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 845,
+        "n_words": 122,
+        "choice": "option_A",
+        "cpu": 2.9999999999960614e-06,
+        "inferences": 33,
+        "profiler": {
+            "nodes": 8,
+            "samples": 0,
+            "time": 4.0531158447265625e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/pattern_recognition - availability_bias/2-outdated-pattern/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 616,
+        "n_words": 99,
+        "choice": "option_A",
+        "cpu": 2.9999999999960614e-06,
+        "inferences": 25,
+        "profiler": {
+            "nodes": 21,
+            "samples": 0,
+            "time": 3.814697265625e-06
+        },
+        "wall": 4.0531158447265625e-06,
+        "file": "./seed_corpus/stability - anchoring_bias/2-cost-dilemma/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 467,
+        "n_words": 74,
+        "choice": "option_A",
+        "cpu": 2.000000000002e-06,
+        "inferences": 10,
+        "profiler": {
+            "nodes": 13,
+            "samples": 0,
+            "time": 2.1457672119140625e-06
+        },
+        "wall": 2.1457672119140625e-06,
+        "file": "./seed_corpus/stability - anchoring_bias/1-time-estimate/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 620,
+        "n_words": 100,
+        "choice": "option_B",
+        "cpu": 2.000000000002e-06,
+        "inferences": 14,
+        "profiler": {
+            "nodes": 8,
+            "samples": 0,
+            "time": 1.9073486328125e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/action_oriented - overconfidence_bias/2-quick-testing/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 619,
+        "n_words": 93,
+        "choice": "option_B",
+        "cpu": 1.000000000001e-06,
+        "inferences": 8,
+        "profiler": {
+            "nodes": 11,
+            "samples": 0,
+            "time": 9.5367431640625e-07
+        },
+        "wall": 1.9073486328125e-06,
+        "file": "./seed_corpus/action_oriented - overconfidence_bias/1-requirements-dilemma/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 630,
+        "n_words": 94,
+        "choice": "option_B",
+        "cpu": 3.0000000000030003e-06,
+        "inferences": 18,
+        "profiler": {
+            "nodes": 20,
+            "samples": 0,
+            "time": 4.0531158447265625e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/social - bandwagon_effect/1-extra-features/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 491,
+        "n_words": 82,
+        "choice": "option_B",
+        "cpu": 1.9999999999950613e-06,
+        "inferences": 11,
+        "profiler": {
+            "nodes": 14,
+            "samples": 0,
+            "time": 3.0994415283203125e-06
+        },
+        "wall": 2.86102294921875e-06,
+        "file": "./seed_corpus/social - bandwagon_effect/2-quick-fix-dilemma/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 630,
+        "n_words": 98,
+        "choice": "option_A",
+        "cpu": 5.999999999999062e-06,
+        "inferences": 52,
+        "profiler": {
+            "nodes": 16,
+            "samples": 0,
+            "time": 7.867813110351562e-06
+        },
+        "wall": 6.198883056640625e-06,
+        "file": "./seed_corpus/perception - framing_effect/2-delay-recovery/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 458,
+        "n_words": 77,
+        "choice": "option_A",
+        "cpu": 1.9999999999950613e-06,
+        "inferences": 8,
+        "profiler": {
+            "nodes": 11,
+            "samples": 0,
+            "time": 9.5367431640625e-07
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/perception - framing_effect/1-fix-strategy/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 522,
+        "n_words": 77,
+        "choice": "option_A",
+        "cpu": 2.000000000002e-06,
+        "inferences": 9,
+        "profiler": {
+            "nodes": 12,
+            "samples": 0,
+            "time": 2.1457672119140625e-06
+        },
+        "wall": 2.1457672119140625e-06,
+        "file": "./seed_corpus/memory - hindsight_bias/2-system-refactoring/0-unbiased_task.pl"
+    },
+    {
+        "type": "unbiased",
+        "n_chars": 821,
+        "n_words": 123,
+        "choice": "option_A",
+        "cpu": 9.999999999940612e-07,
+        "inferences": 12,
+        "profiler": {
+            "nodes": 16,
+            "samples": 0,
+            "time": 2.1457672119140625e-06
+        },
+        "wall": 3.0994415283203125e-06,
+        "file": "./seed_corpus/memory - hindsight_bias/1-new-software/0-unbiased_task.pl"
+    }
+]

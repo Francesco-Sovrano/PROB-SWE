@@ -1,0 +1,1 @@
+If a module has a critical security flaw, it must be fixed before deployment. Fixing a vulnerability before deployment means both integrating a secure library and fully testing that integration. The best practice is: choose an option that fixes the encryption module’s critical flaw, integrates the secure library, and fully tests that integration before deployment.

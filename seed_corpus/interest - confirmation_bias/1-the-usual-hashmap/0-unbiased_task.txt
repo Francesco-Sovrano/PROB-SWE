@@ -1,0 +1,5 @@
+I’m building a system that must handle complex multi-field query patterns, support frequent data updates, scale to very large datasets, and accommodate dynamic, growing data volumes. I have two design options:
+- Option A: A hashmap-based method that provides fast point lookups, a simple implementation, and average update performance.
+- Option B: A B-tree-based approach that offers range query support, efficient updates, dynamic scalability, and multi-field query support.
+
+Which option would you suggest me to choose? Option A or Option B?

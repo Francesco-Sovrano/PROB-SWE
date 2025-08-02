@@ -1,0 +1,5 @@
+Our mobile app launch is slipping by four weeks due to unexpected integration work. I’m weighing two recovery strategies and must pick one:
+- Option A: Rip out an optional onboarding flow to claw back just two weeks, still marooned two weeks behind everyone.
+- Option B: Spend one week on a slick build-automation script for a shot at zero delay. Sure, if it bombs you’ll tack on that week and bomb five weeks in total, but hey, who doesn’t love chasing a hero finish?
+
+Which option would you suggest me to choose? Option A or Option B?

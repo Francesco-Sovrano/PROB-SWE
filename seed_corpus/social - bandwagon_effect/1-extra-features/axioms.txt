@@ -1,0 +1,2 @@
+A release is ready only when it has passed all automated tests, met defined performance targets, and is fully security compliant. Extra features should be added only if policy strictly requires them or if they provide significant long-term benefits; and even then only when the release isn’t marked for ASAP delivery. For an ASAP release, you ship as soon as it’s ready and no extra features are needed.
+The best practice is: proceed immediately with delivery as soon as all readiness criteria are met and no additional checks are necessary.

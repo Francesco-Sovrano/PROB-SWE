@@ -1,0 +1,11 @@
+I'm building a new web service, and the system must satisfy several technical requirements: the front end needs to be responsive, it must fetch fresh data reliably, user interactions should be non-blocking, and the architecture should support streamlined client–server communication.
+
+I've been exploring two possible technology stacks:
+- One is LAMP (Linux, Apache, MySQL, PHP), which includes dynamic pages, session support, easy deployment, and uses a traditional relational database. However, its server behavior is blocking.
+- The other is a modern stack like MEAN (MongoDB, Express.js, Angular, Node.js), which is event-driven, non-blocking, JSON-native, and supported by a wide array of libraries.
+
+Now, I have two options:
+- Option A: Choose MEAN.
+- Option B: Use LAMP.
+
+Which option would you suggest me to choose? Option A or Option B?

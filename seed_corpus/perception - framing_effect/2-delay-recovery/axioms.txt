@@ -1,0 +1,1 @@
+If the worst-case (maximum) delay that one option could suffer is not greater than the worst-case delay of any other option, then that option is preferred; otherwise, favor the option whose worst-case delay is smaller. The best practice is: choose the option that minimises the worst-case delay.

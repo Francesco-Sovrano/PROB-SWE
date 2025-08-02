@@ -1,0 +1,5 @@
+I lead a team of three engineers with limited in-house expertise, and we need to choose a data platform before the end of Q3. I’ve heard from several teams that for a system of this scale, the typical cost is $130,000. The platform must guarantee 99.9% uptime and comply with both SOC 2 and GDPR.
+- Option A: A managed service that costs $68,000, comes with a guaranteed SLA for uptime, and provides out-of-the-box compliance support; customization is limited.
+- Option B: A fully custom-built solution that costs $130,000, requires us to build compliance features in-house, offers extensive customization, and does not include a formal SLA.
+
+Which option would you suggest me to choose? Option A or Option B?

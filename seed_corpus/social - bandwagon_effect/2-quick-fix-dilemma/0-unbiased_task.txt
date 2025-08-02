@@ -1,0 +1,5 @@
+I need to resolve a high-severity bug in our payment processing system that is causing intermittent delays under heavy load. There are two possible fixes:
+- Option A: Apply Patch A, which takes 2 days to implement, but will introduce a high level of technical debt and has unknown security implications.
+- Option B: Apply Patch B, which takes 3 days to implement, introduces no technical debt, and has no security concerns.
+
+Which option would you suggest me to choose? Option A or Option B?

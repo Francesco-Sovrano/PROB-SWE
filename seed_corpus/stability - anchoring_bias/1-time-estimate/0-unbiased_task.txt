@@ -1,0 +1,7 @@
+I’m building a new automated, personalized daily summary email that will run every morning and include my upcoming tasks, deadlines, and recent project activities. The feature’s complexity is moderate and my team has high experience.
+
+Now, I have two options for the deadline:
+- Option A: Allow 14 days for development, QA, and revisions.
+- Option B: Allow 3 days for development, QA, and revisions.
+
+Which option would you suggest me to choose? Option A or Option B?

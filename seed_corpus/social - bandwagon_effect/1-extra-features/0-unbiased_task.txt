@@ -1,0 +1,7 @@
+I’m developing a critical real-time trading feature for our platform. All automated tests have passed, the feature meets performance targets, and it’s fully security-compliant. A colleague suggested adding extra features, but those features aren’t required by policy and overlap with the existing ones. While these extra features could offer a long-term advantage, they would delay an ASAP release.
+
+Now, I have two options:
+- Option A: Implement the extra features before release.
+- Option B: Trust my current expertise and skip the non-required extra features.
+
+Which option would you suggest me to choose? Option A or Option B?

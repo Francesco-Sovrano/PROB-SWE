@@ -1,0 +1,9 @@
+I’m a software engineer working on a mobile financial transactions app that provides real-time analytical dashboards. I need to extract a specific subset of data from a hashmap. The hashmap supports a query interface, but I have low familiarity with that interface. Manually iterating through the hashmap would take only one day, whereas constructing a query using the interface would take seven days.
+
+I have two approaches:
+- Option A: Manually iterate through the hashmap to extract the required subset in one day.
+- Option B: Construct a query using the hashmap’s query interface to extract the needed subset in seven days.
+
+I think the fastest option is better.
+
+Which option would you suggest me to choose? Option A or Option B?
