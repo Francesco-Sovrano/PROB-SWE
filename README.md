@@ -92,6 +92,25 @@ A framework for generating, validating, and analyzing data-induced cognitive bia
 
    You should see a list of available models if your key is valid.
 
+## Groq API Setup
+
+1. **Create an API key**
+   Visit GroqCloud and generate a key. ([console.groq.com][1])
+
+2. **Set your environment variable**
+   Either export it in your shell:
+
+   ```bash
+   export GROQ_API_KEY="your_groq_api_key_here"
+   ```
+
+   or add it to a `.env` file:
+
+   ```dotenv
+   GROQ_API_KEY=your_groq_api_key_here
+   ```
+
+
 ---
 
 ## Usage
@@ -122,8 +141,3 @@ These define the natural-language prompts and Prolog axioms to inject.
 * **`generated_data/`**: contains the output of the `run_all_experiments.sh` script raw LLM responses, structured CSV outputs, and intermediate files.
 * **`logs/`**: detailed run logs for each step, useful for debugging and audit trails.
 
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
