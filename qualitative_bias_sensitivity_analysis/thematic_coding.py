@@ -43,6 +43,8 @@ themes = [
 
 # Load the CSV file
 df = pd.read_csv('bias_sample_analysis.csv')
+# df = pd.read_csv("../generated_data/2_llm_outputs_model=deepseek-r1-distill-llama-70b.data_model_list=['gpt-4o-mini', 'gpt-4.1-mini', 'deepseek-r1-distill-llama-70b'].csv")
+df = df[df['sensitive_to_bias']]
 
 # cols = ['decision_explanation_without_bias','decision_explanation_with_bias']
 # words = set()
@@ -78,8 +80,7 @@ def assign_themes(text):
     t = text.lower()
     return [theme for theme, kws in themes_keywords.items() if any(k in t for k in kws)]
 
-# Load and annotate
-df = pd.read_csv('bias_sample_analysis.csv')
+# Annotate
 for suffix in ['without_bias', 'with_bias']:
     col = f"decision_explanation_{suffix}"
     df[f"themes_{suffix}"] = df[col].apply(assign_themes)
@@ -143,7 +144,7 @@ diff_df = (grouped.get('with', pd.Series()) - grouped.get('without', pd.Series()
 
 # Plot heatmap
 plt.figure(figsize=(8, 5))
-sns.heatmap(diff_df.fillna(0), annot=True, cmap='icefire', cbar_kws={'label': 'Δ Count'})
+sns.heatmap(diff_df.fillna(0), annot=True, fmt='d', cmap='icefire', cbar_kws={'label': 'Δ Count'})
 plt.xticks(rotation=45, ha='right')
 plt.yticks(rotation=0)
 plt.xlabel('')
