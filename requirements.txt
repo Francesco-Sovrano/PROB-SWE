@@ -6,3 +6,5 @@ openai
 sentence_transformers
 matplotlib
 seaborn
+statsmodels
+scikit-learn
