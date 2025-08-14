@@ -1,9 +1,7 @@
-# PROBE‑SWE — Replication Package
-
-> PRolog‑based dilemmas for Observing cognitive Bias Effects in Software Engineering (PROBE‑SWE)
+# PROBE‑SWE: A Prolog‑based Dynamic Benchmarking Protocol for Observing Cognitive Bias Effects in Software Engineering
 
 This repository contains the replication package for the paper _“Is General-Purpose AI Reasoning Sensitive to Data-Induced Cognitive Biases? Dynamic Benchmarking on Typical Software Engineering Dilemmas”_.  
-It introduces **PROBE‑SWE**, a dynamic benchmarking framework for generating, validating, and analysing **data‑induced cognitive biases** in **general‑purpose AI (GPAI)** systems applied to **software‑engineering tasks** (e.g., GPT‑4o).
+It introduces **PROBE‑SWE** (**PR**olog‑based dilemmas for **O**bserving cognitive **B**ias **E**ffects in **S**oft**W**are **E**ngineering), a dynamic benchmarking framework for generating, validating, and analysing **data‑induced cognitive biases** in **general‑purpose AI (GPAI)** systems applied to **software‑engineering tasks** (e.g., GPT‑4o).
 
 **What you get here**
 - A curated **seed corpus** of human‑written dilemma pairs covering multiple bias families.
