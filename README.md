@@ -12,7 +12,7 @@ It introduces **PROBE‑SWE** (**PR**olog‑based dilemmas for **O**bserving cog
 
 ---
 
-## Abstract
+## Paper Abstract
 
 Human cognitive biases in software engineering can lead to costly errors. While general-purpose AI (GPAI) systems may help mitigate these biases due to their non-human nature, their training on human-generated data raises a critical question: **Do GPAI systems themselves exhibit cognitive biases?**
 
