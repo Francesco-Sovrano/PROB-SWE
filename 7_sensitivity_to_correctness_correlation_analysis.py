@@ -128,6 +128,7 @@ sns.heatmap(
 plt.xticks(rotation=30, ha='right', fontsize=10)
 plt.yticks(fontsize=10)
 plt.xlabel("")
+plt.ylabel("")
 # plt.title('Heatmap of Correlations (Bias Sensitivity vs. Proxy Metrics)', pad=15, fontsize=14)
 
 # Save as PDF
