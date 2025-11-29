@@ -25,21 +25,41 @@ for f in files:
 	df = pd.read_csv(f)
 	if 'sensitive_to_bias' not in df.columns:
 		continue
+	# Compute lengths
+	df['biased_len'] = df['biased'].map(lambda x: len(x.split(' ')))
+	df['unbiased_len'] = df['unbiased'].map(lambda x: len(x.split(' ')))
+	df['delta_len'] = df['biased_len'] - df['unbiased_len']
 	for metric in [
 		'pair_similarity',
 		'pair_levenshtein_distance',
 		'agreement_rate',
-		'unbiased_prompt_reconstruction_similarity'
+		'unbiased_prompt_reconstruction_similarity',
+		'unbiased_len',
+		'biased_len',
+		'delta_len',
 	]:
 		if metric in df.columns:
 			x = df['sensitive_to_bias']
 			y = df[metric]
 			mask = x.notna() & y.notna()
 			if mask.sum() > 1:
+				# y_masked = y[mask]
+				# if metric in ['unbiased','biased']:
+				# 	y_masked = y_masked.map(len)
 				corr, p = pearsonr(x[mask], y[mask])
 			else:
 				corr, p = np.nan, np.nan
 			results.append((model, metric, corr, p))
+
+	# Compute and print statistics about biased/unbiased dilemma lengths by bias_name
+	stats = (
+		df.groupby('bias_name')[['delta_len']]
+		.agg(['mean', 'std', 'median', 'count'])
+		.round(2)
+	)
+
+	print(f"\n=== {model_mapping.get(model, model)} ===")
+	print(stats)
 
 res_df = pd.DataFrame(results, columns=['model','metric','corr','p_value'])
 res_df["model"] = res_df["model"].map(model_mapping).fillna(res_df["model"])
@@ -61,15 +81,38 @@ for i in pivot.index:
 
 # descriptive labels
 descriptive_labels = {
-	'agreement_rate': 'Decision matching rate',
-	'pair_levenshtein_distance': 'Levenshtein distance',
-	'pair_similarity': 'Cosine similarity',
-	'unbiased_prompt_reconstruction_similarity': 'Program–dilemma similarity'
+	'agreement_rate': 'Intra-Model\nAgreement Rate',
+	'pair_levenshtein_distance': 'Pair\nLevenshtein Dist.',
+	'pair_similarity': 'Pair\nCosine Similarity',
+	'unbiased_prompt_reconstruction_similarity': 'Program–Dilemma\nAlignment',
+	'unbiased_len': 'Unbiased\nDilemma Length',
+	'biased_len': 'Biased\nDilemma Length',
+	'delta_len': 'Delta (B.-Unb.)\nDilemma Length',
 }
-pivot.index = [descriptive_labels[m] for m in pivot.index]
+# pivot.index = [descriptive_labels[m] for m in pivot.index]  # rename labels
+
+# build a rank map that understands BOTH keys and pretty labels
+order_map = {}
+for i, (k, lbl) in enumerate(descriptive_labels.items()):
+    order_map[k] = i          # original key
+    order_map[lbl] = i        # pretty label
+
+# make a view for plotting only
+pivot = (pivot
+           .rename(index=descriptive_labels)  # rename where possible; leaves others alone
+           .sort_index(
+               key=lambda idx: idx.map(lambda x: order_map.get(x, float("inf"))),
+               kind="stable"                  # keep relative order of items not in your list
+           ))
+
+# keep annot aligned if it's a pandas object
+annot = (annot.rename(index=descriptive_labels)
+                   .reindex(pivot.index)
+              if hasattr(annot, "reindex") else annot)
+
 
 # Plot with seaborn
-plt.figure(figsize=(8, 3))
+plt.figure(figsize=(8, 3.5))
 
 sns.heatmap(
 	pivot,
@@ -82,7 +125,7 @@ sns.heatmap(
 	cbar_kws={'label': 'Pearson r'}
 )
 
-plt.xticks(rotation=45, ha='right', fontsize=10)
+plt.xticks(rotation=30, ha='right', fontsize=10)
 plt.yticks(fontsize=10)
 plt.xlabel("")
 # plt.title('Heatmap of Correlations (Bias Sensitivity vs. Proxy Metrics)', pad=15, fontsize=14)

@@ -81,28 +81,6 @@ Examples from the set of pairs of dilemmas you have to augment are given below.
 {pair_2_bias}
 ```"""
 
-BIAS_EXISTENCE_SYSTEM_INSTRUCTION = (
-	"You will be given a task description as input, ending with a question. Do not answer the question! Instead, analyze the task description and determine whether it contains or may lead to a {bias_label} (see definition below) and no other types of bias.\n\n"
-	"Definition of '{bias_label}': {bias_definition}\n\n"
-	"Response Format (strictly follow this structure without adding extra text or formatting):\n"
-	"```\n"
-	"Explanation: <Provide a brief explanation for your judgment>\n"
-	"Decision: <Your decision: 'Yes, it has a {bias_label} and no other bias.' or 'No, it does not have a {bias_label} or it may have other types of biases'>\n"
-	"```"
-)
-
-BIAS_TOWARDS_INCORRECT_SYSTEM_INSTRUCTION = (
-	"You are an AI assistant designed to provide step-by-step responses. You will be given two versions (A and B) of a task, each ending with a question. Do not answer the questions! Instead, analyze the two task versions and determine whether BOTH of these two POINTS hold true:\n"
-	"1. Version A does NOT explicitly contain a {bias_label} (see definition below) that may directly favour {wrong_option} over the other options.\n"
-	"2. Version B explicitly contains a {bias_label} (see definition below) that may directly favour {wrong_option} over the other options.\n"
-	"Definition of '{bias_label}': {bias_definition}\n\n"
-	"Response Format (strictly follow this structure without adding extra text or formatting):\n"
-	"```\n"
-	"Explanation: <Provide a very short explanation for your judgment>\n"
-	"Decision: <Your decision: 'Yes, BOTH the two POINTS hold true.' or 'No, there is one of the POINTS which is false.' >\n"
-	"```"
-)
-
 model = args.model
 if model.startswith('gpt') or model.startswith('o1') or model.startswith('o3') or model.startswith('o4'):
 	api_key = os.getenv('OPENAI_API_KEY')

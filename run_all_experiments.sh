@@ -111,3 +111,9 @@ python3 5_bias_awareness_analysis.py --model llama-3.3-70b-versatile --n_indepen
 python3 5_bias_awareness_analysis.py --model deepseek-r1-distill-llama-70b --n_independent_runs_per_task "$N_INDEPENDENT_RUNS_PER_TASK"  &> ./logs/5_bias_awareness_analysis.$N_INDEPENDENT_RUNS_PER_TASK.deepseek-r1-distill-llama-70b.log 
 
 python3 6_visualize_bias_awareness_analysis.py
+
+python3 7_sensitivity_to_correctness_correlation_analysis.py
+
+python3 8_external_judge_validation.py  --data_model_list gpt-4.1-mini gpt-4o-mini deepseek-r1-distill-llama-70b --model gpt-5-nano --n_prolog_construction_reruns "$N_PROLOG_CONSTRUCTION_RERUNS" --n_independent_runs_per_task "$N_INDEPENDENT_RUNS_PER_TASK" &> ./logs/8_external_judge_validation.gpt-5-nano.$N_PROLOG_CONSTRUCTION_RERUNS.$N_INDEPENDENT_RUNS_PER_TASK.log 
+
+python3 8_external_judge_validation.py  --data_model_list gpt-4.1-mini gpt-4o-mini deepseek-r1-distill-llama-70b --model gpt-5-mini --n_prolog_construction_reruns "$N_PROLOG_CONSTRUCTION_RERUNS" --n_independent_runs_per_task "$N_INDEPENDENT_RUNS_PER_TASK" &> ./logs/8_external_judge_validation.gpt-5-mini.$N_PROLOG_CONSTRUCTION_RERUNS.$N_INDEPENDENT_RUNS_PER_TASK.log 

@@ -211,7 +211,7 @@ if bias_sample_heatmap:
     ax2.set_title("Bias Sample Analysis")
     ax2.set_xlabel('')
     ax2.set_ylabel('')
-    ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha='right')
+    ax2.set_xticklabels(ax2.get_xticklabels(), rotation=40, ha='right')
     ax2.set_yticklabels(ax2.get_yticklabels(), rotation=0)
     plt.tight_layout()
     sep_out = os.path.join(results_dir, "heatmap_bias_sample_analysis.pdf")

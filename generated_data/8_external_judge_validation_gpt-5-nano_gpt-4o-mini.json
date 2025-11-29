@@ -1,0 +1,48 @@
+{
+    "discarded_dilemmas_count": 131,
+    "discarded_dilemmas_count_ratio": "16.25%",
+    "discarded_dilemmas_count_by_bias": {
+        "confirmation bias": 10,
+        "hyperbolic discounting": 31,
+        "availability bias": 20,
+        "anchoring bias": 4,
+        "overconfidence bias": 8,
+        "bandwagon effect": 18,
+        "framing effect": 15,
+        "hindsight bias": 25
+    },
+    "discarded_dilemmas_count_by_filter_by_bias": {
+        "confirmation bias": {
+            "bias_towards_incorrect": 3,
+            "output_matching": 7
+        },
+        "hyperbolic discounting": {
+            "bias_towards_incorrect": 19,
+            "output_matching": 12
+        },
+        "availability bias": {
+            "bias_towards_incorrect": 11,
+            "output_matching": 9
+        },
+        "anchoring bias": {
+            "bias_towards_incorrect": 2,
+            "output_matching": 2
+        },
+        "overconfidence bias": {
+            "bias_towards_incorrect": 6,
+            "output_matching": 2
+        },
+        "bandwagon effect": {
+            "bias_towards_incorrect": 5,
+            "output_matching": 13
+        },
+        "framing effect": {
+            "bias_towards_incorrect": 11,
+            "output_matching": 4
+        },
+        "hindsight bias": {
+            "bias_towards_incorrect": 25,
+            "output_matching": 0
+        }
+    }
+}
